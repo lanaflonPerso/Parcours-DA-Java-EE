@@ -96,9 +96,9 @@ public class SomeFunction {
      * on s'appui sur les méthodes de la class
      */
 
-    public static void LeMotLePlusLong(){
+    public static void LeMotLePlusLong( String maPhrase ){
 
-        String maPhrase ="Je regarde dans cette phrase qu'elle est le mot le plus long";
+
         String[] tab = maPhrase.split(" ");
 
         List<Integer> myArrayInt = new ArrayList<Integer>();
