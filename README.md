@@ -1,7 +1,7 @@
 # Parcours-DA-Java-EE
 # Exercices Level 1 :
 
-Exercice 1 
+Exercice 1
 Ecrire une fonction qui calcule le factoriel d’un nombre et le retourne Exemple  factorial(4) = 4x3x2x1 = 24. 
  
 Exercice 2 
@@ -17,7 +17,7 @@ Exercice 5
 Ecrire une fonction qui retourne ‘Fizz’ pour les multiples de 3 et “Buzz” pour les multiples de 5. Pour les nombres multiple de à la fois 3 et 5 ça retourne “FizzBuzz”. Sinon ça retourne null 
  
 Exercice 6 
-Ecrire une fonction isPalindrome qui permet de dire true ou false si une chaîne est un palindrome 
+Ecrire une fonction qui permet de dire true ou false si une chaîne est un palindrome
  
 Exercice 7 
 Ecrire une fonction à laquelle si on passe une phrase elle retourne le mot le plus long de la phrase. 
