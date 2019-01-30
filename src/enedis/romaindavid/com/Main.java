@@ -1,6 +1,6 @@
 package enedis.romaindavid.com;
 
-import enedis.romaindavid.com.Level_1.SomeFunction;
+import enedis.romaindavid.com.level1.SomeFunction;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,15 +24,15 @@ public class Main {
             }
         }
         // Valeur existante sorti index de la première occurence
-        System.out.println(SomeFunction.FirstIntInArray( myArrayInt, 9));
+        System.out.println(SomeFunction.firstIntInArray( myArrayInt, 9));
         // Valeur inexistante
-        System.out.println(SomeFunction.FirstIntInArray( myArrayInt, 4));
+        System.out.println(SomeFunction.firstIntInArray( myArrayInt, 4));
 
 
         // Excercice 3
         System.out.println("\n");
         System.out.println("Excercice 3: inversion d'une chaîne de caractère");
-        System.out.println(SomeFunction.InverseString("java interview"));
+        System.out.println(SomeFunction.inverseString("java interview"));
 
         // Excercice 4
         System.out.println("\n");
@@ -42,12 +42,12 @@ public class Main {
         tabInt[1] = 31;
         tabInt[2] = 74 ;
         tabInt[3] = 47;
-        System.out.println(SomeFunction.TheBiggerInt( tabInt ) );
+        System.out.println(SomeFunction.theBiggerInt( tabInt ) );
 
         // Excercice 5
         System.out.println("\n");
         System.out.println("Excercie 5 : Multiple de 3 ou de 5");
-        System.out.println(SomeFunction.IsModulo3ou5( 5 ));
+        System.out.println(SomeFunction.isModulo3ou5( 5 ));
 
         // Excercice 6
         System.out.println("\n");
@@ -57,7 +57,7 @@ public class Main {
 
         // Excercice 7
         String maPhrase ="Je regarde dans cette phrase qu'elle est le mot le plus long";
-        SomeFunction.LeMotLePlusLong( maPhrase );
+        SomeFunction.leMotLePlusLong( maPhrase );
 
 
     }

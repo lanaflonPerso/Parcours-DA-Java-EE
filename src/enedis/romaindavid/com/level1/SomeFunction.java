@@ -1,4 +1,4 @@
-package enedis.romaindavid.com.Level_1;
+package enedis.romaindavid.com.level1;
 
 
 
@@ -30,7 +30,7 @@ public class SomeFunction {
      * @param n
      * @return
      */
-    public static int FirstIntInArray(List<Integer> intArray,int n){
+    public static int firstIntInArray(List<Integer> intArray,int n){
 
         return intArray.indexOf( n );
 
@@ -42,9 +42,9 @@ public class SomeFunction {
      * @param value
      * @return
      */
-    public static String InverseString(String value ){
+    public static String inverseString(String value ){
         StringBuffer values =  new StringBuffer( value ) ;
-       return values.reverse().toString();
+        return values.reverse().toString();
 
     }
 
@@ -53,7 +53,7 @@ public class SomeFunction {
      * @param tab
      * @return
      */
-    public static int TheBiggerInt(int[] tab){
+    public static int theBiggerInt(int[] tab){
         OptionalInt max = IntStream.of(tab).max();
         return  max.getAsInt();
     }
@@ -63,7 +63,7 @@ public class SomeFunction {
      * @param n
      * @return
      */
-    public static String IsModulo3ou5(int n ){
+    public static String isModulo3ou5(int n ){
         String IsModulo = "";
         if( n % 3 == 0)
             IsModulo += "Fizz";
@@ -85,7 +85,7 @@ public class SomeFunction {
      * @return
      */
     public static boolean isPalindrome(String value ){
-        if ( value.equals( InverseString( value ) ) )
+        if ( value.equals( inverseString( value ) ) )
             return true;
         else
             return false;
@@ -96,7 +96,7 @@ public class SomeFunction {
      * on s'appui sur les méthodes de la class
      */
 
-    public static void LeMotLePlusLong( String maPhrase ){
+    public static void leMotLePlusLong( String maPhrase ){
 
 
         String[] tab = maPhrase.split(" ");
@@ -108,7 +108,7 @@ public class SomeFunction {
 
         int [] ints = myArrayInt.stream().mapToInt(Integer::intValue).toArray();
 
-        System.out.println( "Le premier mot le plus long est " + tab[ FirstIntInArray( myArrayInt,TheBiggerInt( ints ) )  ] );
+        System.out.println( "Le premier mot le plus long est " + tab[ firstIntInArray( myArrayInt,theBiggerInt( ints ) )  ] );
 
     }
 
