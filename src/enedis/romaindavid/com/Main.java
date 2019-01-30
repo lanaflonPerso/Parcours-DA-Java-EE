@@ -13,19 +13,23 @@ public class Main {
         //Excercice 1
         System.out.println("Excercie 1 : factoriel de 4");
         System.out.println(SomeFunction.factorial( 4 ));
-        System.out.println("\n");
-        System.out.println("Excercie 2 :  de 4");
+
 
         //Excercice 2
-        List<Integer> myArrayInt = new ArrayList<Integer>();
+        int[] myArrayInt = new int[5000];
+        int n = 0;
         for(int i = 0; i < 10 ; i++ ){
             for(int j = 0 ; j < 1000; j = j + 3){
-                myArrayInt.add( j );
+                myArrayInt[ n++ ]= j ;
             }
         }
+        System.out.println("\n");
+
         // Valeur existante sorti index de la première occurence
+        System.out.println("Excercie 2 :  première ocuurence de 9");
         System.out.println(SomeFunction.firstIntInArray( myArrayInt, 9));
         // Valeur inexistante
+        System.out.println("Excercie 2 :  première ocuurence de 4");
         System.out.println(SomeFunction.firstIntInArray( myArrayInt, 4));
 
 

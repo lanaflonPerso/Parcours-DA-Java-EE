@@ -17,6 +17,7 @@ public class SomeFunction {
      * @return
      */
     public static int factorial(int n ){
+
         if( n == 0 )
             return 1;
         else
@@ -30,10 +31,18 @@ public class SomeFunction {
      * @param n
      * @return
      */
-    public static int firstIntInArray(List<Integer> intArray,int n){
+    public static int firstIntInArray(int[] intArray,int n){
 
-        return intArray.indexOf( n );
+        int firstInt = -1;
+        int indexOf = 0;
 
+        for (int i: intArray ) {
+            if (i == n)
+                return indexOf;
+
+            indexOf++;
+        }
+        return  firstInt;
     }
 
     /**
@@ -43,9 +52,14 @@ public class SomeFunction {
      * @return
      */
     public static String inverseString(String value ){
-        StringBuffer values =  new StringBuffer( value ) ;
-        return values.reverse().toString();
+        String reverseValue = "";
+        int lengthValue = value.length() - 1;
+        String[] values = value.split("");
 
+        for(int i = lengthValue; i >= 0; i-- )
+            reverseValue += values[ i ];
+
+        return  reverseValue;
     }
 
     /**
@@ -54,8 +68,14 @@ public class SomeFunction {
      * @return
      */
     public static int theBiggerInt(int[] tab){
-        OptionalInt max = IntStream.of(tab).max();
-        return  max.getAsInt();
+        int biggerInt = -1;
+        int lengthTab = tab.length - 1 ;
+
+        for(int i = 0; i<= lengthTab; i++)
+            if( tab[i] > biggerInt)
+                biggerInt = tab[ i ];
+
+        return biggerInt;
     }
 
     /**
@@ -97,18 +117,13 @@ public class SomeFunction {
      */
 
     public static void leMotLePlusLong( String maPhrase ){
-
-
+        String biggerMot = "";
         String[] tab = maPhrase.split(" ");
+        for (String mot: tab )
+            if (mot.length()> biggerMot.length() )
+                biggerMot = mot ;
 
-        List<Integer> myArrayInt = new ArrayList<Integer>();
-
-        for (String len: tab )
-            myArrayInt.add( len.length() ) ;
-
-        int [] ints = myArrayInt.stream().mapToInt(Integer::intValue).toArray();
-
-        System.out.println( "Le premier mot le plus long est " + tab[ firstIntInArray( myArrayInt,theBiggerInt( ints ) )  ] );
+        System.out.println( "Le premier mot le plus long est " + biggerMot );
 
     }
 
