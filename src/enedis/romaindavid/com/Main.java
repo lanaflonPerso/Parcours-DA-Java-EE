@@ -60,7 +60,7 @@ public class Main {
         System.out.println("test du Mot Papa " + SomeFunction.isPalindrome("Papa"));
 
         // Excercice 7
-        String maPhrase ="Je regarde dans cette phrase qu'elle est le mot le plus long";
+        String maPhrase ="Je regarde dans cette phrase quel est le mot le plus long";
         SomeFunction.leMotLePlusLong( maPhrase );
 
 
